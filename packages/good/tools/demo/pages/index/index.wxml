@@ -1,1 +1,7 @@
-<comp></comp>
+<comp
+    id="{{ good.id }}"
+    logoUrl="{{ good.logoUrl }}"
+    name="{{ good.name }}"
+    price="{{ good.price }}"
+    amount="{{ amount }}"
+></comp>
