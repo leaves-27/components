@@ -1,6 +1,6 @@
 {
   "name": "@leaves-27/kvs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "miniprogram_dist/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "test-debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --bail",
     "coverage": "jest ./test/* --coverage --bail",
     "lint": "eslint \"src/**/*.js\" --fix",
-    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\" --fix"
+    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\" --fix",
+    "publish": "npm run build && npm publish --access=public"
   },
   "miniprogram": "miniprogram_dist",
   "jest": {
